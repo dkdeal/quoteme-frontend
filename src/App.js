@@ -14,6 +14,9 @@ function App() {
     isLoggedIn()
   },[]);
 
+  /*
+    Is logged in generates a token for a logged in user then sets the to our context
+  */
   const isLoggedIn = async () => {
     let data = await fetch("http://localhost:3000/users/token", {
       method: "POST",
