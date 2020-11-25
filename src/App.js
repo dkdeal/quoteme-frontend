@@ -13,7 +13,7 @@ function App() {
   useEffect(() =>{
     isLoggedIn()
   },[]);
-
+  
   const isLoggedIn = async () => {
     let data = await fetch("http://localhost:3000/users/token", {
       method: "POST",
